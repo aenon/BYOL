@@ -79,6 +79,11 @@ int main(int argc, char** argv) {
     /* Output the prompt and get input */
     char* input = readline("lispy>> ");
 
+    if (!input) {
+      printf("EOF\n");
+      return 0;
+    }
+
     /* Add input to history */
     add_history(input);
 

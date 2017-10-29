@@ -1,5 +1,6 @@
 # lispy executable
 lispy
+infix
 
 # Object files
 *.o

@@ -1,2 +1,2 @@
 lispy: lispy.c
-		$(CC) lispy.c -o lispy -Wall -Wextra -pedantic -std=c99 -ledit
+		$(CC) -std=c99 -Wall lispy.c mpc.c -ledit -lm -o lispy
